@@ -1,0 +1,28 @@
+﻿@*This is the default layout, the common layout shared across the pages of the application*@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!--Customizes the browser window with title and icon for the page, implements bootstrap style-->
+    <title>@ViewData["Title"]</title>
+    <link href="~/bootstrap/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="~/img/icon.png" />
+</head>
+<body>
+    <nav>
+        @*navigation bar calls the views attached using tag helpers*@
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Javascript files are integrated here-->
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+</body>
+</html>

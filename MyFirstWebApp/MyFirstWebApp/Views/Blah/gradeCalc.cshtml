@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model GradeCalcModel;
+<!--Form to enter in scores based on each category of the class, accepts user input and calls javascript function-->
+<h2>Grade Calculator</h2>
+@*will post the user input to the GradeCalcModel*@
+<form method="post">
+    @*accepts each user input and gets them for the model*@
+    <label>% Assignments:</label>
+    <input id="assignment" asp-for="Assignments"/><br />
+    <label>% Group Project:</label>
+    <input id="gproject" asp-for="GroupProject" /><br />
+    <label>% Quizzes:</label>
+    <input id="quiz" asp-for="Quizzes" /><br />
+    <label>% Midterm Exam:</label>
+    <input id="midterm" asp-for="MidtermExam" /><br />
+    <label>% Final Exam:</label>
+    <input id="final" asp-for="FinalExam" /><br />
+    <label>% INTEX:</label>
+    <input id="intex" asp-for="INTEX" /><br />
+    <input id="calc" type="submit" value="Calculate Grade" />
+    <br />
+    <!--Displays message based on grade calculated-->
+    <label id="grade" name="grade"></label>
+
+    @*adds data validation from GradeCalcModel to the form*@
+    <div asp-validation-summary="All"/>
+</form>
+
+@*adds js program to calculate the grade*@
+<script src="js/gradecalc.js"></script>

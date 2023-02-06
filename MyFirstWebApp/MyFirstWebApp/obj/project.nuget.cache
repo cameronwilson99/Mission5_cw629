@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fc7UgxX92XMcBWqDXHkHAq//h8xQYyKq2WDEKlDMjoVwIrCaN1+C626jSdk2csSBQWE3JbQKrg0nhmWM6i4bdQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\camer\\source\\repos\\MyFirstWebApp\\MyFirstWebApp\\MyFirstWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\camer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
